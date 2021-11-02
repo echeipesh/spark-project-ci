@@ -25,7 +25,7 @@ jobs:
       - name: Setup Java and Scala
         uses: olafurpg/setup-scala@v13
         with:
-          java-version: adoptium@11
+          java-version: adopt@1.11
 
       - name: Cache sbt
         uses: actions/cache@v2
