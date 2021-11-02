@@ -41,4 +41,4 @@ jobs:
 
 
       - name: run tests
-        run: ./sripts/test
+        run: sripts/test
