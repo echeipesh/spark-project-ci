@@ -16,6 +16,7 @@ import org.apache.spark.rdd._
 import org.log4s._
 
 object  Main {
+  break compile
   @transient private[this] lazy val logger = getLogger
 
   private val inputsOpt = Opts.options[String](
