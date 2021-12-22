@@ -22,6 +22,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::617001639586:role/gfw-data-lake-read
+
       - name: Setup Java and Scala
         uses: olafurpg/setup-scala@v13
         with:
